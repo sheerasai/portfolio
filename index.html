@@ -1,0 +1,728 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shira V</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./CSS/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css" />
+
+
+</head>
+
+<body id="body">
+    <div id="cursor"></div>
+    <!--Preloader-->
+    <div id="preloader" class="text-white animate-pulse fixed inset-0 flex justify-center items-center">
+        <h3 class="text-3xl sm:text-5xl text-center">Entering Portfolio... </h3>
+    </div>
+
+    <div class="main-content opacity-0" id="main-content">
+        <!--Hero Section-->
+        <section class="hero-section min-h-screen flex items-center justify-center text-center p-4 relative">
+            <video autoplay muted loop playsinline src="./Images/9665235-hd_1920_1080_25fps.mp4"
+                class="bg-video"></video>
+            <div class="max-w-7xl mx-auto hero-content">
+                <h3 class="text-3xl md:text-7xl text-white font-bold mb-5">
+                    V Shira <span id="type" class="text-green-500"></span>
+                </h3>
+
+                <p class="text-white text-md md:text-lg leading-relaxed">
+                    I’m V Shira, a <span class="text-green-400 font-bold">UI/UX Designer and Web Developer</span> who
+                    believes
+                    in creating meaningful digital
+                    experiences. With a strong eye for detail and a passion for clean design, I specialize in crafting
+                    intuitive
+                    interfaces and responsive websites that not only look good but also feel right to use. I blend
+                    creativity
+                    with
+                    functionality — whether I’m designing in Figma, coding with Tailwind, or collaborating with teams to
+                    bring
+                    projects to life. I’m always looking to learn, evolve, and solve real user problems through
+                    thoughtful
+                    design and
+                    purposeful development.
+                </p>
+
+                <div class="flex flex-col sm:flex-row gap-4 justify-center mt-8">
+                    <a href="./VShiraResume.pdf" download
+                        class="bg-white px-6 py-3 rounded-full text-black hover:border hover:bg-transparent hover:text-white transition">
+                        Download Resume
+                    </a>
+                    <a href="#portfolio"
+                        class="px-6 py-3 rounded-full text-white green-550 hover:bg-green-700 hover:text-black transition">
+                        PortFolio
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!--Skills Section-->
+        <div class="body-content">
+            <section id="skills" class="min-h-screen flex text-center lg:p-24 flex-col ">
+                <div class="flex justify-center mb-8">
+                    <h2 class="text-3xl text-white sm:text-5xl font-bold">My Skill <span class="text-white">Box</span>
+                    </h2>
+                </div>
+                <div class="skills-section max-w-7xl mx-auto headline" id="skill-section">
+                    <img src="./Images/star-4.png" alt="" srcset="" class="animate-bounce h-24">
+                    <div class="flex gap-4 flex-wrap justify-center shadow-sm p-16 bgskillbox rounded">
+                        <div class="skill-label border border-gray-500 p-3 rounded-full flex gap-3">
+                            <img src="./Images/ps.png" alt="" class="h-6">
+                            <p class="text-white mb-0 text-sm">Adobe Photoshop</p>
+                        </div>
+
+                        <div class="skill-label border border-gray-500 p-3 rounded-full flex gap-3">
+                            <img src="./Images/adobe-xd.png" alt="" class="h-6">
+                            <p class="text-white mb-0 text-sm">Adobe XD</p>
+                        </div>
+
+                        <div class="skill-label border border-gray-500 p-3 rounded-full flex gap-3">
+                            <img src="./Images/ux.jpg" alt="" class="h-6">
+                            <p class="text-white mb-0 text-sm">UX Design</p>
+                        </div>
+
+                        <div class="skill-label border border-gray-500 p-3 rounded-full flex gap-3">
+                            <img src="./Images/figma.webp" alt="" class="h-6">
+                            <p class="text-white mb-0 text-sm">Figma</p>
+                        </div>
+
+                        <div class="skill-label border border-gray-500 p-3 rounded-full flex gap-3">
+                            <img src="./Images/ux_res.png" alt="" class="h-6">
+                            <p class="text-white mb-0 text-sm">User Research </p>
+                        </div>
+
+                        <div class="skill-label border border-gray-500 p-3 rounded-full flex gap-3">
+                            <img src="./Images/prototype.png" alt="" class="h-6">
+                            <p class="text-white mb-0 text-sm">Prototyping</p>
+                        </div>
+
+
+                        <div class="skill-label border border-gray-500 p-3 rounded-full flex gap-3">
+                            <img src="./Images/wireframe.png" alt="" class="h-6">
+
+                            <p class="text-white mb-0 text-sm">Wireframing</p>
+                        </div>
+
+                        <div class="skill-label border border-gray-500 p-3 rounded-full flex gap-3">
+                            <img src="./Images/html.svg" alt="" class="h-6">
+                            <p class="text-white mb-0 text-sm">HTML/CSS</p>
+                        </div>
+
+
+
+                        <div class="skill-label border border-gray-500 p-3 rounded-full flex gap-3">
+                            <img src="./Images/tailwind.svg" alt="" class="h-6">
+                            <p class="text-white text-center text-sm mb-0">Tailwind Css</p>
+                        </div>
+
+                        <div class="skill-label border border-gray-500 p-3 rounded-full flex gap-3">
+                            <img src="./Images/responsive.png" alt="" class="h-6">
+                            <p class="text-white text-center text-sm mb-0">Responsive Design</p>
+                        </div>
+
+                        <div class="skill-label border border-gray-500 p-3 rounded-full flex gap-3">
+                            <img src="./Images/Bootstrap_logo.svg.png" alt="" class="h-6">
+                            <p class="text-white text-center text-sm mb-0">Bootstrap Css</p>
+                        </div>
+                        <div class="skill-label border border-gray-500 p-3 rounded-full flex gap-3">
+                            <img src="./Images/js.svg" alt="" class="h-6">
+                            <p class="text-white mb-0 text-sm">Javascript</p>
+                        </div>
+                        <div class="skill-label border border-gray-500 p-3 rounded-full flex gap-3">
+                            <img src="./Images/wordpress.svg" alt="" class="h-6">
+                            <p class="text-white mb-0 text-sm">Wordpress</p>
+                        </div>
+
+                        <div class="skill-label border border-gray-500 p-3 rounded-full flex gap-3">
+                            <img src="./Images/react-2.svg" alt="" class="h-6">
+                            <p class="text-white mb-0 text-sm">React Js</p>
+                        </div>
+
+
+                        <div class="what-I-do-section flex flex-col">
+                            <h2 class="text-left text-white text-3xl mt-7">What I Bring to the Table</h2>
+                            <div class="grid grid-cols-1 xl:grid-cols-2 text-left mt-7">
+                                <div class="flex gap-3 mt-4 flex-col">
+                                    <p class="text-white text-xl"><i
+                                            class="fa-solid fa-diamond text-green-500 animate-spin"></i> UI
+                                        Design </p>
+                                    <div>
+                                        <p class="text-gray-300 text-sm">Crafting visually engaging, user-centered
+                                            interfaces for
+                                            websites, dashboards, and apps.
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div class="flex gap-3 mt-4 flex-col">
+                                    <p class="text-white text-xl"><i
+                                            class="fa-solid fa-diamond text-green-500 animate-spin"></i> UX
+                                        Design </p>
+                                    <div>
+                                        <p class="text-gray-300 text-sm">Designing intuitive experiences backed by user
+                                            research, journey mapping, and usability principles.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="grid grid-cols-1 xl:grid-cols-2 text-left mt-7">
+                                <div class="flex gap-3 mt-4 flex-col">
+                                    <p class="text-white text-xl"><i
+                                            class="fa-solid fa-diamond text-green-500 animate-spin"></i>
+                                        Responsive
+                                        Front-End Development </p>
+                                    <div>
+                                        <p class="text-gray-300 text-sm">Building responsive and cross-browser
+                                            compatible
+                                            UIs using HTML, CSS, Tailwind, and Bootstrap.
+
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div class="flex gap-3 mt-4 flex-col">
+                                    <p class="text-white text-xl"><i
+                                            class="fa-solid fa-diamond text-green-500 animate-spin"></i>
+                                        Prototyping </p>
+                                    <div>
+                                        <p class="text-gray-300 text-sm">Creating interactive prototypes to test and
+                                            present
+                                            design flows and functionality.
+
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="grid grid-cols-1 xl:grid-cols-2 text-left mt-7">
+                                <div class="flex gap-3 mt-4 flex-col">
+                                    <p class="text-white text-xl"><i
+                                            class="fa-solid fa-diamond text-green-500 animate-spin"></i>
+                                        Design Handoff </p>
+                                    <div>
+                                        <p class="text-gray-300 text-sm">Collaborating with developers using tools like
+                                            Figma, XD to ensure pixel-perfect execution.
+
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div class="flex gap-3 mt-4 flex-col">
+                                    <p class="text-white text-xl"><i
+                                            class="fa-solid fa-diamond text-green-500 animate-spin"></i>
+                                        Component-Based
+                                        Design </p>
+                                    <div>
+                                        <p class="text-gray-300 text-sm">Creating reusable components and design systems
+                                            for
+                                            scalable UI development.
+
+
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+            </section>
+
+            <!--Portfolio Section Image Gallery-->
+            <section id="portfolio"
+                class="max-w-7xl mx-auto text-white relative portfolio-Image-section sm:p-6 lg:p-24">
+                <h2 class="text-3xl text-green-500 sm:text-5xl font-bold mb-4">Portfolio <span class="text-white">
+                        Section</span> </h2>
+                <div class="tab-container">
+                    <div class="tab-buttons flex gap-5 justify-center mb-7">
+                        <!-- Tab Buttons -->
+                        <button type="button" class="tab-btn active-btn" data-tab="webApp"> Web App Designs </button>
+                        <button type="button" class="tab-btn" data-tab="mobApp"> Mob App Designs </button>
+                    </div>
+
+                    <div class="tab-content mb-8" id="webApp">
+                        <div class="sm:columns-3">
+                            <div class="mb-3">
+                                <a data-fancybox="gallery"
+                                    href="./Images/Portfolio-Images/RecruitmentDashaboardTechversant.png">
+                                    <img src="./Images/Portfolio-Images/RecruitmentDashaboardTechversant.png" alt=""
+                                        class="h-full aspect-square mb-3">
+                                </a>
+
+
+
+                                <a data-fancybox="gallery"
+                                    href="./Images/Portfolio-Images/Cable-operators-Dashboard.png">
+                                    <img src="./Images/Portfolio-Images/Cable-operators-Dashboard.png"
+                                        class="h-full mb-3" />
+                                </a>
+                            </div>
+
+                            <div class="mb-3">
+                                <a data-fancybox="gallery" href="./Images/Portfolio-Images/PurpleMoon.png">
+                                    <img src="./Images/Portfolio-Images/PurpleMoon.png" alt="" class="h-full mb-3">
+                                </a>
+
+                            </div>
+
+                            <div class="mb-3">
+                                <a data-fancybox="gallery" href="./Images/Portfolio-Images/PayrollLogin (2).png">
+                                    <img src="./Images/Portfolio-Images/PayrollLogin (2).png" alt=""
+                                        class="h-full mb-3">
+                                </a>
+
+                            </div>
+
+                            <div class="mb-3">
+                                <a data-fancybox="gallery" href="./Images/Portfolio-Images/TiicToe (1).png">
+                                    <img src="./Images/Portfolio-Images/TiicToe (1).png" alt="" class="h-full mb-3">
+                                </a>
+
+                                <a data-fancybox="gallery" href="./Images/Portfolio-Images/PayrollLogin (3).png">
+                                    <img src="./Images/Portfolio-Images/PayrollLogin (3).png" alt=""
+                                        class="h-full mb-3">
+                                </a>
+
+
+                            </div>
+
+                            <div class="mb-3">
+                                <a data-fancybox="gallery" href="./Images/Portfolio-Images/Landingpage (4).png">
+                                    <img src="./Images/Portfolio-Images/Landingpage (4).png" alt="" class="h-full">
+                                </a>
+
+                            </div>
+
+
+                        </div>
+                    </div>
+
+                    <div class="tab-content  mb-8" id="mobApp">
+                        <div class="columns-3">
+                            <div class="mb-3">
+                                <a data-fancybox="gallery" href="./Images/Portfolio-Images/FirstScreen.png">
+                                    <img src="./Images/Portfolio-Images/FirstScreen.png" alt="" class="h-full mb-3">
+                                </a>
+                                <a data-fancybox="gallery" href="./Images/Portfolio-Images/Car-Page.png">
+                                    <img src="./Images/Portfolio-Images/Car-Page.png" alt="" class="h-full mb-3">
+                                </a>
+                                <a data-fancybox="gallery" href="./Images/Portfolio-Images/Group 31 (1).png">
+                                    <img src="./Images/Portfolio-Images/Group 31 (1).png" alt="" class="h-full">
+                                </a>
+                            </div>
+
+                            <div class="mb-3">
+                                <a data-fancybox="gallery" href="./Images/Portfolio-Images/Compudatas.png">
+                                    <img src="./Images/Portfolio-Images/Compudatas.png" alt="" class="h-full mb-3">
+                                </a>
+                                <a data-fancybox="gallery" href="./Images/Portfolio-Images/createProductList.png">
+                                    <img src="./Images/Portfolio-Images/createProductList.png" alt="" class="h-full">
+                                </a>
+                            </div>
+
+                            <div class="mb-3">
+                                <a data-fancybox="gallery" href="./Images/Portfolio-Images/CreateTickerList.png">
+                                    <img src="./Images/Portfolio-Images/CreateTickerList.png" alt=""
+                                        class="h-full mb-3">
+                                </a>
+                                <a data-fancybox="gallery" href="./Images/Portfolio-Images/ESGOrders.png">
+                                    <img src="./Images/Portfolio-Images/ESGOrders.png" alt="" class="h-full">
+                                </a>
+                            </div>
+
+                            <div class="mb-3">
+                                <a data-fancybox="gallery" href="./Images/Portfolio-Images/CreateTickerList.png">
+                                    <img src="./Images/Portfolio-Images/CreateTickerList.png" alt=""
+                                        class="h-full mb-3">
+                                </a>
+                                <a data-fancybox="gallery" href="./Images/Portfolio-Images/ESGOrders.png">
+                                    <img src="./Images/Portfolio-Images/ESGOrders.png" alt="" class="h-full">
+                                </a>
+                            </div>
+
+                            <div class="mb-3">
+                                <a data-fancybox="gallery" href="./Images/Portfolio-Images/Register.png">
+                                    <img src="./Images/Portfolio-Images/Register.png" alt="" class="h-full mb-3">
+                                </a>
+                                <a data-fancybox="gallery" href="./Images/Portfolio-Images/Login.png">
+                                    <img src="./Images/Portfolio-Images/Login.png" alt="" class="h-full">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!--Project  Section-->
+            <div id="particles-js"></div>
+            <section id="project-section" class="max-w-7xl mx-auto text-white relative sm:p-6 lg:p-24">
+                <div class="flex justify-center mb-7 mt-7">
+                    <h2 class="text-3xl text-green-500 sm:text-5xl font-bold">Project <span class="text-white">
+                            Section</span> </h2>
+                </div>
+                <div class="project-section  p-5" id="projects">
+                    <div class="grid grid-cols-1 gap-4  xl:grid-cols-2">
+                        <!--Project one-->
+                        <div class="project-box p-4 text-left rounded-sm shadow-md mb-4">
+                            <div class="project-basic detail mb-7">
+                                <h2 class="text-xl text-white mb-5 flex gap-2"><img src="./Images/star-2.png" alt="">
+                                    Project:
+                                    Internal HR Dashboard</h2>
+                                <h6 class="text-sm mb-3"><i class="fa-solid fa-diamond text-green-500"></i> Role: <span
+                                        class="text-green-500">UI/UX
+                                        Designer</span></h6>
+                                <h6 class="text-sm  mb-3"><i class="fa-solid fa-diamond text-green-500"></i> Tools:
+                                    Figma
+                                </h6>
+                                <h6 class="text-sm  mb-3"><i class="fa-solid fa-diamond text-green-500"></i> Summary:
+                                    Worked
+                                    on an internal HR dashboard
+                                    used by 200+ employees. My role involved improving usability and creating a scalable
+                                    design system.</h6>
+                            </div>
+
+
+                            <div class="project-process detail mb-7">
+                                <h2 class="text-xl text-white mb-5">Process:</h2>
+                                <h6 class="text-sm mb-3"><i class="fa-solid fa-diamond text-green-500"></i> Conducted
+                                    stakeholder interviews and gathered pain points.</h6>
+                                <h6 class="text-sm  mb-3"><i class="fa-solid fa-diamond text-green-500"></i> Created
+                                    wireframes and click-through prototypes.</h6>
+                                <h6 class="text-sm  mb-3"><i class="fa-solid fa-diamond text-green-500"></i>
+                                    Collaborated
+                                    closely with frontend developers for handoff</h6>
+                            </div>
+
+
+                            <div class="project-outcome detail mb-7">
+                                <h2 class="text-xl text-white mb-5">Outcome:</h2>
+                                <h6 class="text-sm mb-3"><i class="fa-solid fa-diamond text-green-500"></i> 30%
+                                    reduction in
+                                    support tickets related to navigation.</h6>
+                                <h6 class="text-sm  mb-3"><i class="fa-solid fa-diamond text-green-500"></i> Positive
+                                    feedback from internal teams.</h6>
+                                <h6 class="text-sm  mb-3"><i class="fa-solid fa-diamond text-green-500"></i>
+                                    Collaborated
+                                    closely with frontend
+                                </h6>
+                            </div>
+                        </div>
+                        <!--Project two-->
+                        <div class="project-box p-4 text-left rounded-sm shadow-md mb-4">
+                            <div class="project-box p-4 text-left rounded-sm shadow-md">
+                                <div class="project-basic detail mb-7">
+                                    <h2 class="text-xl text-white mb-5 flex gap-2"><img src="./Images/star-2.png"
+                                            alt=""> Project:
+                                        Tutors Valley</h2>
+                                    <h6 class="text-sm mb-3"><i class="fa-solid fa-diamond text-green-500"></i> Role:
+                                        <span class="text-green-500">UI/UX & UI/Ux Developer
+
+                                        </span>
+                                    </h6>
+                                    <h6 class="text-sm  mb-3"><i class="fa-solid fa-diamond text-green-500"></i> Tools:
+                                        Figma / Html,Css,Bootstrap
+                                    </h6>
+                                    <h6 class="text-sm  mb-3"><i class="fa-solid fa-diamond text-green-500"></i>
+                                        Summary: Designed and developed responsive HTML pages for the Tutors Valley
+                                        platform. Worked closely with React developers to ensure smooth integration of
+                                        UI into the application. Fixed design inconsistencies and layout issues
+                                        post-integration. Also supported UI/UX improvements based on feedback and
+                                        evolving product requirements.
+                                    </h6>
+                                </div>
+
+
+                                <div class="project-process detail mb-7">
+                                    <h2 class="text-xl text-white mb-5">Key Contributions:</h2>
+                                    <h6 class="text-sm mb-3"><i class="fa-solid fa-diamond text-green-500"></i>
+                                        Developed pixel-perfect, mobile-responsive HTML pages from design files
+
+                                    </h6>
+                                    <h6 class="text-sm  mb-3"><i class="fa-solid fa-diamond text-green-500"></i>
+                                        Collaborated with React developers for design handoff and integration.</h6>
+                                    <h6 class="text-sm  mb-3"><i class="fa-solid fa-diamond text-green-500"></i>
+                                        Identified and fixed layout and responsiveness issues during implementation</h6>
+                                    <h6 class="text-sm  mb-3"><i class="fa-solid fa-diamond text-green-500"></i>
+                                        Contributed to UI/UX refinements where needed to enhance user experience</h6>
+                                </div>
+
+
+
+                            </div>
+                        </div>
+
+                        <!--Project three-->
+
+                        <div class="project-box p-4 text-left rounded-sm shadow-md mb-4">
+                            <div class="project-box p-4 text-left rounded-sm shadow-md">
+                                <div class="project-basic detail mb-7">
+                                    <h2 class="text-xl text-white mb-5 flex gap-2"><img src="./Images/star-2.png"
+                                            alt=""> Project:
+                                        CompuSystems</h2>
+                                    <h6 class="text-sm mb-3"><i class="fa-solid fa-diamond text-green-500"></i> Role:
+                                        <span class="text-green-500">UI/UX Designer
+                                        </span>
+                                    </h6>
+                                    <h6 class="text-sm  mb-3"><i class="fa-solid fa-diamond text-green-500"></i> Tools:
+                                        Adobe XD
+                                    </h6>
+                                    <h6 class="text-sm  mb-3"><i class="fa-solid fa-diamond text-green-500"></i>
+                                        Summary:
+
+                                        Created a mobile-first, responsive web interface with:
+
+                                        Badge login (QR + manual)
+
+                                        Instructional UI for QR scanning & manual entry
+
+                                        Product widget cards showing thumbnails, company name, and content links
+
+                                        Developed detail pages for:
+
+                                        Product specs (image/video/brochure)
+
+                                        Contact info (email, phone tap actions)
+
+                                        Personal notes and data export
+
+                                        Integrated UI for offline syncing, including clear indicators and transitions
+                                        between offline and online states
+
+                                        Designed analytics dashboard UI showing user engagement, screen time, and click
+                                        behavior
+                                    </h6>
+                                </div>
+
+
+                                <div class="project-process detail mb-7">
+                                    <h2 class="text-xl text-white mb-5">Key UX Decisions</h2>
+                                    <h6 class="text-sm mb-3"><i class="fa-solid fa-diamond text-green-500"></i>
+                                        Used card-based design for product listings to maximize mobile readability.
+
+                                    </h6>
+                                    <h6 class="text-sm  mb-3"><i class="fa-solid fa-diamond text-green-500"></i>
+                                        Designed multi-step product upload flow with clear feedback and validation for
+                                        file uploads.</h6>
+                                    <h6 class="text-sm  mb-3"><i class="fa-solid fa-diamond text-green-500"></i>
+                                        Focused on error states and feedback for offline mode, file validation, and
+                                        duplicate detection.</h6>
+                                    <h6 class="text-sm  mb-3"><i class="fa-solid fa-diamond text-green-500"></i>
+                                        Created interactive scanning experience with fallback instructions for manual QR
+                                        entry.</h6>
+                                </div>
+
+
+
+                            </div>
+                        </div>
+
+                        <!--Project Four-->
+                        <div class="project-box p-4 text-left rounded-sm shadow-md mb-4">
+                            <div class="project-box p-4 text-left rounded-sm shadow-md">
+                                <div class="project-basic detail mb-7">
+                                    <h2 class="text-xl text-white mb-5 flex gap-2"><img src="./Images/star-2.png"
+                                            alt=""> Project:
+                                        Titan – HelloCRM.ai </h2>
+                                    <h6 class="text-sm mb-3"><i class="fa-solid fa-diamond text-green-500"></i> Role:
+                                        <span class="text-green-500">UI/UX Designer + React Component Support
+                                        </span>
+                                    </h6>
+                                    <h6 class="text-sm  mb-3"><i class="fa-solid fa-diamond text-green-500"></i> Tools:
+                                        Figma, React (Component Collaboration)
+                                    </h6>
+                                    <h6 class="text-sm  mb-3"><i class="fa-solid fa-diamond text-green-500"></i>
+                                        Summary:
+
+                                        Designed the full UI/UX experience for HelloCRM.ai, a sales insight platform
+                                        developed for Titan CXOs and Regional Managers. The system integrates with a
+                                        WhatsApp-based AI chatbot to surface real-time sales metrics and AI-driven
+                                        recommendations. Also collaborated with React developers to break down the UI
+                                        into reusable components, maintain design consistency during integration, and
+                                        resolve responsiveness issues.
+                                    </h6>
+                                </div>
+
+
+                                <div class="project-process detail mb-7">
+                                    <h2 class="text-xl text-white mb-5">Key Contributions:</h2>
+                                    <h6 class="text-sm mb-3"><i class="fa-solid fa-diamond text-green-500"></i>
+                                        Created a clean, intuitive interface for:</h6>
+                                    <h6 class="text-sm  mb-3"><i class="fa-solid fa-diamond text-green-500"></i>
+                                        Admin dashboard (fallback queries, role access, data uploads).</h6>
+                                    <h6 class="text-sm  mb-3"><i class="fa-solid fa-diamond text-green-500"></i>
+                                        Focused on error states and feedback for offline mode, file validation, and
+                                        duplicate detection.</h6>
+                                    <h6 class="text-sm  mb-3"><i class="fa-solid fa-diamond text-green-500"></i>
+                                        Designed modular, scalable layouts for various roles (CXO, Regional Manager,
+                                        Admin)</h6>
+                                </div>
+
+                                <div class="project-process detail mb-7">
+                                    <h2 class="text-xl text-white mb-5">React Component Support:</h2>
+                                    <h6 class="text-sm mb-3"><i class="fa-solid fa-diamond text-green-500"></i>
+                                        Worked closely with developers to:</h6>
+                                    <h6 class="text-sm  mb-3"><i class="fa-solid fa-diamond text-green-500"></i>
+                                        Break down UI into reusable React components.</h6>
+                                    <h6 class="text-sm  mb-3"><i class="fa-solid fa-diamond text-green-500"></i>
+                                        Align component behavior with design system and interaction guidelines</h6>
+                                    <h6 class="text-sm  mb-3"><i class="fa-solid fa-diamond text-green-500"></i>
+                                        Review integrated screens and fix layout, spacing, and accessibility issues</h6>
+
+                                    <h6 class="text-sm  mb-3"><i class="fa-solid fa-diamond text-green-500"></i>
+                                        Re-ensure responsiveness across screen sizes (desktop/mobile)</h6>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+            <!--Experience Section-->
+            <section id="experience-section" class="max-w-7xl mx-auto text-white relative sm:p-6 lg:p-24">
+                <div class="flex justify-center mb-7 mt-7">
+                    <h2 class="text-3xl text-green-500 sm:text-5xl font-bold">Experience <span class="text-white">
+                            Section</span> </h2>
+                </div>
+
+
+                <div class="grid grid-cols-9">
+                    <!--Exp 1 Stack 1-->
+                    <div class="col-span-4 w-full h-full">
+                        <div class="w-full h-full bg-gray-800 rounded-md p-4 md:pl-4 text-left">
+                            <h2 class="text-white text-xl "> Senior UI/UX Designer</h2>
+                            <h5 class="text-sm text-gray-300 mb-4">Techversant Infotech Pvt. Ltd. <span
+                                    class="text-green-500 text-sm">(Present)</span></h5>
+                            <ul class="points text-sm">
+                                <li class="text-sm mb-4"><i class="fa-solid fa-diamond text-green-500"></i> Designing
+                                    and delivering intuitive web and application interfaces.</li>
+                                <li class="text-sm mb-4"><i class="fa-solid fa-diamond text-green-500"></i> Creating
+                                    responsive layouts using Figma, Tailwind, and Bootstrap.</li>
+                                <li class="text-sm mb-4"><i class="fa-solid fa-diamond text-green-500"></i>
+                                    Collaborating closely with developers for seamless design.</li>
+                            </ul>
+                        </div>
+
+                    </div>
+
+                    <div class="col-span-1 w-full h-full flex justify-center items-center relative">
+                        <div class="h-full w-1 bg-green-600"></div>
+                        <div class="absolute w-5 h-5 bg-green-600 z-10 rounded-full text-white">1</div>
+                    </div>
+                    <div class="col-span-4 w-full h-full"></div>
+
+                    <!--Exp 2 Stack 2-->
+                    <div class="col-span-4 w-full h-full"></div>
+                    <div class="col-span-1 w-full h-full flex justify-center items-center relative">
+                        <div class="h-full w-1 bg-green-600"></div>
+                        <div class="absolute w-5 h-5 bg-green-600 z-10 rounded-full text-white">2</div>
+                    </div>
+
+                    <div class="col-span-4 w-full h-full ">
+                        <div class="w-full h-full bg-gray-800 rounded-md p-4 md:pl-4 text-left">
+                            <h2 class="text-white text-xl ">UI Developer</h2>
+                            <h5 class="text-sm text-gray-300 mb-4">TCP International Inc. <span
+                                    class="text-green-gray-300 text-sm">(2.6 months)</span></h5>
+                            <ul class="points text-sm">
+                                <li class="text-sm mb-4"><i class="fa-solid fa-diamond text-green-500"></i> Customized
+                                    and maintained WordPress websites for US Clients worked on both design and
+                                    development</li>
+                                <li class="text-sm mb-4"><i class="fa-solid fa-diamond text-green-500"></i> Worked on
+                                    Creating responsive layouts using Figma,Adobe XD,Photoshop and Bootstrap in the
+                                    eccomerce Projects.</li>
+                                <li class="text-sm mb-4"><i class="fa-solid fa-diamond text-green-500"></i> Designed
+                                    banners and handled video editing for web content.</li>
+
+                            </ul>
+                        </div>
+
+                    </div>
+
+
+                    <!--Exp 3 Stack 3-->
+                    <div class="col-span-4 w-full h-full ">
+                        <div class="w-full h-full bg-gray-800 rounded-md p-4 md:pl-4 text-left">
+                            <h2 class="text-white text-xl ">Web Designer</h2>
+                            <h5 class="text-sm text-gray-300 mb-4">Aftis Global Pvt.Ltd<span
+                                    class="text-green-gray-300 text-sm"> (2018 – 2019, 1 year)</span></h5>
+                            <ul class="points text-sm">
+                                <li class="text-sm mb-4"><i class="fa-solid fa-diamond text-green-500"></i> Designing
+                                    and delivering intuitive web and application interfaces.</li>
+                                <li class="text-sm mb-4"><i class="fa-solid fa-diamond text-green-500"></i> Creating
+                                    responsive layouts using Figma, Tailwind, and Bootstrap.</li>
+                                <li class="text-sm mb-4"><i class="fa-solid fa-diamond text-green-500"></i>
+                                    Collaborating closely with developers for seamless design.</li>
+                            </ul>
+                        </div>
+
+                    </div>
+
+                    <div class="col-span-1 w-full h-full flex justify-center items-center relative">
+                        <div class="h-full w-1 bg-green-600"></div>
+                        <div class="absolute w-5 h-5 bg-green-600 z-10 rounded-full text-white">3</div>
+                    </div>
+                    <div class="col-span-4 w-full h-full"></div>
+
+
+                </div>
+
+            </section>
+
+            <!--Contact Section-->
+            <section class="max-w-7xl mx-auto text-white relative sm:p-6 lg:p-24">
+                <div class="flex justify-center mb-7 mt-7">
+                    <h2 class="text-3xl text-green-500 sm:text-5xl font-bold">Let's <span class="text-white">
+                            Connect</span> </h2>
+                </div>
+
+                <div class="flex gap-4 flex-wrap text-white justify-center">
+                    <div>
+                        <a href="mailto:shirausha@gmail.com?subject=shirausha@gmail.com">
+                            <img src="https://static.vecteezy.com/system/resources/previews/016/716/465/non_2x/gmail-icon-free-png.png"
+                                class="h-24">
+                        </a>
+                    </div>
+
+
+                    <div>
+                        <a href="https://wa.me/9629600956" target="_blank">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/WhatsApp_icon.png/640px-WhatsApp_icon.png"
+                                class="h-24">
+                        </a>
+                    </div>
+                    <div>
+                        <a href="https://www.linkedin.com/in/shira-v-05b319270/" target="_blank">
+                            <img src="https://i0.wp.com/openvisualfx.com/wp-content/uploads/2019/10/linkedin-icon-logo-png-transparent.png?fit=2400%2C2400&ssl=1"
+                                class="h-24">
+                        </a>
+                    </div>
+
+                    <div>
+                        <a href="https://www.behance.net/shirasaini" target="_blank">
+                            <img src="https://cdn.worldvectorlogo.com/logos/behance-1.svg" class="h-24">
+                        </a>
+                    </div>
+                </div>
+
+
+            </section>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/particles.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="./JS/main.js"></script>
+</body>
+
+</html>
