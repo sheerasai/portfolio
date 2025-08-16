@@ -82,3 +82,9 @@ html,body {
 .tab-content.active{
   display: block;
 }
+
+@media(max-width:999px){
+  #cursor{
+    display: none;
+  }
+}
