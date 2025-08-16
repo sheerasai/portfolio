@@ -8,7 +8,7 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="./CSS/main.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery/css/lightgallery-bundle.min.css" />
 
 
 </head>
@@ -16,11 +16,11 @@
 <body id="body">
     <div id="cursor"></div>
     <!--Preloader-->
-    <div id="preloader" class="text-white animate-pulse fixed inset-0 flex justify-center items-center">
+    <!-- <div id="preloader" class="text-white animate-pulse fixed inset-0 flex justify-center items-center">
         <h3 class="text-3xl sm:text-5xl text-center">Entering Portfolio... </h3>
-    </div>
+    </div> -->
 
-    <div class="main-content opacity-0" id="main-content">
+    <div class="main-content" id="main-content">
         <!--Hero Section-->
         <section class="hero-section min-h-screen flex items-center justify-center text-center p-4 relative">
             <video autoplay muted loop playsinline src="./Images/9665235-hd_1920_1080_25fps.mp4"
@@ -249,32 +249,31 @@
                     </div>
 
                     <div class="tab-content mb-8" id="webApp">
-                        <div class="sm:columns-3">
+                        <div id="lightgallery" class="sm:columns-3">
                             <div class="mb-3">
-                                <a data-fancybox="gallery"
-                                    href="./Images/Portfolio-Images/RecruitmentDashaboardTechversant.png">
-                                    <img loading="lazy" src="./Images/Portfolio-Images/RecruitmentDashaboardTechversant.png" alt=""
+                                <a data-src="./Images/Portfolio-Images/RecruitmentDashaboardTechversant.png">
+                                    <img loading="lazy"
+                                        src="./Images/Portfolio-Images/RecruitmentDashaboardTechversant.png" alt=""
                                         class="h-full aspect-square mb-3">
                                 </a>
 
 
 
-                                <a data-fancybox="gallery"
-                                    href="./Images/Portfolio-Images/Cable-operators-Dashboard.png">
+                                <a data-src="./Images/Portfolio-Images/Cable-operators-Dashboard.png">
                                     <img loading="lazy" src="./Images/Portfolio-Images/Cable-operators-Dashboard.png"
                                         class="h-full mb-3" />
                                 </a>
                             </div>
 
                             <div class="mb-3">
-                                <a data-fancybox="gallery" href="./Images/Portfolio-Images/PurpleMoon.png">
+                                <a data-src="./Images/Portfolio-Images/PurpleMoon.png">
                                     <img src="./Images/Portfolio-Images/PurpleMoon.png" alt="" class="h-full mb-3">
                                 </a>
 
                             </div>
 
                             <div class="mb-3">
-                                <a data-fancybox="gallery" href="./Images/Portfolio-Images/PayrollLogin (2).png">
+                                <a data-src="./Images/Portfolio-Images/PayrollLogin (2).png">
                                     <img loading="lazy" src="./Images/Portfolio-Images/PayrollLogin (2).png" alt=""
                                         class="h-full mb-3">
                                 </a>
@@ -282,12 +281,13 @@
                             </div>
 
                             <div class="mb-3">
-                                <a data-fancybox="gallery" href="./Images/Portfolio-Images/TiicToe (1).png">
-                                    <img loading="lazy" src="./Images/Portfolio-Images/TiicToe (1).png" alt="" class="h-full mb-3">
+                                <a data-src="./Images/Portfolio-Images/TiicToe (1).png">
+                                    <img loading="lazy" src="./Images/Portfolio-Images/TiicToe (1).png" alt=""
+                                        class="h-full mb-3">
                                 </a>
 
-                                <a data-fancybox="gallery" href="./Images/Portfolio-Images/PayrollLogin (3).png">
-                                    <img loading="lazy" src="./Images/Portfolio-Images/PayrollLogin (3).png" alt=""
+                                <a data-src="./Images/Portfolio-Images/PayrollLogin (3).png">
+                                    <img data-src="lazy" src="./Images/Portfolio-Images/PayrollLogin (3).png" alt=""
                                         class="h-full mb-3">
                                 </a>
 
@@ -295,8 +295,9 @@
                             </div>
 
                             <div class="mb-3">
-                                <a data-fancybox="gallery" href="./Images/Portfolio-Images/Landingpage (4).png">
-                                    <img loading="lazy" src="./Images/Portfolio-Images/Landingpage (4).png" alt="" class="h-full">
+                                <a data-src="./Images/Portfolio-Images/Landingpage (4).png">
+                                    <img data-src="lazy" src="./Images/Portfolio-Images/Landingpage (4).png" alt=""
+                                        class="h-full">
                                 </a>
 
                             </div>
@@ -308,51 +309,59 @@
                     <div class="tab-content  mb-8" id="mobApp">
                         <div class="sm:columns-3">
                             <div class="mb-3">
-                                <a data-fancybox="gallery" href="./Images/Portfolio-Images/FirstScreen.png">
-                                    <img loading="lazy" src="./Images/Portfolio-Images/FirstScreen.png" alt="" class="h-full mb-3">
+                                <a data-src="./Images/Portfolio-Images/FirstScreen.png">
+                                    <img loading="lazy" src="./Images/Portfolio-Images/FirstScreen.png" alt=""
+                                        class="h-full mb-3">
                                 </a>
-                                <a data-fancybox="gallery" href="./Images/Portfolio-Images/Car-Page.png">
-                                    <img loading="lazy" src="./Images/Portfolio-Images/Car-Page.png" alt="" class="h-full mb-3">
+                                <a data-src="./Images/Portfolio-Images/Car-Page.png">
+                                    <img loading="lazy" src="./Images/Portfolio-Images/Car-Page.png" alt=""
+                                        class="h-full mb-3">
                                 </a>
-                                <a data-fancybox="gallery" href="./Images/Portfolio-Images/Group 31 (1).png">
-                                    <img loading="lazy" src="./Images/Portfolio-Images/Group 31 (1).png" alt="" class="h-full">
+                                <a" data-src="./Images/Portfolio-Images/Group 31 (1).png">
+                                    <img loading="lazy" src="./Images/Portfolio-Images/Group 31 (1).png" alt=""
+                                        class="h-full">
+                                    </a>
+                            </div>
+
+                            <div class="mb-3">
+                                <a data-src="./Images/Portfolio-Images/Compudatas.png">
+                                    <img loading="lazy" src="./Images/Portfolio-Images/Compudatas.png" alt=""
+                                        class="h-full mb-3">
+                                </a>
+                                <a data-src="./Images/Portfolio-Images/createProductList.png">
+                                    <img loading="lazy" src="./Images/Portfolio-Images/createProductList.png" alt=""
+                                        class="h-full">
                                 </a>
                             </div>
 
                             <div class="mb-3">
-                                <a data-fancybox="gallery" href="./Images/Portfolio-Images/Compudatas.png">
-                                    <img loading="lazy" src="./Images/Portfolio-Images/Compudatas.png" alt="" class="h-full mb-3">
-                                </a>
-                                <a data-fancybox="gallery" href="./Images/Portfolio-Images/createProductList.png">
-                                    <img loading="lazy" src="./Images/Portfolio-Images/createProductList.png" alt="" class="h-full">
-                                </a>
-                            </div>
-
-                            <div class="mb-3">
-                                <a data-fancybox="gallery" href="./Images/Portfolio-Images/CreateTickerList.png">
+                                <a data-src="./Images/Portfolio-Images/CreateTickerList.png">
                                     <img loading="lazy" src="./Images/Portfolio-Images/CreateTickerList.png" alt=""
                                         class="h-full mb-3">
                                 </a>
-                                <a data-fancybox="gallery" href="./Images/Portfolio-Images/ESGOrders.png">
-                                    <img loading="lazy" src="./Images/Portfolio-Images/ESGOrders.png" alt="" class="h-full">
+                                <a data-src="./Images/Portfolio-Images/ESGOrders.png">
+                                    <img loading="lazy" src="./Images/Portfolio-Images/ESGOrders.png" alt=""
+                                        class="h-full">
                                 </a>
                             </div>
 
                             <div class="mb-3">
-                                <a data-fancybox="gallery" href="./Images/Portfolio-Images/CreateTickerList.png">
+                                <a data-src="./Images/Portfolio-Images/CreateTickerList.png">
                                     <img loading="lazy" src="./Images/Portfolio-Images/CreateTickerList.png" alt=""
                                         class="h-full mb-3">
                                 </a>
-                                <a data-fancybox="gallery" href="./Images/Portfolio-Images/ESGOrders.png">
-                                    <img loading="lazy" src="./Images/Portfolio-Images/ESGOrders.png" alt="" class="h-full">
+                                <a data-src="./Images/Portfolio-Images/ESGOrders.png">
+                                    <img loading="lazy" src="./Images/Portfolio-Images/ESGOrders.png" alt=""
+                                        class="h-full">
                                 </a>
                             </div>
 
                             <div class="mb-3">
-                                <a data-fancybox="gallery" href="./Images/Portfolio-Images/Register.png">
-                                    <img loading="lazy" src="./Images/Portfolio-Images/Register.png" alt="" class="h-full mb-3">
+                                <a data-src="./Images/Portfolio-Images/Register.png">
+                                    <img loading="lazy" src="./Images/Portfolio-Images/Register.png" alt=""
+                                        class="h-full mb-3">
                                 </a>
-                                <a data-fancybox="gallery" href="./Images/Portfolio-Images/Login.png">
+                                <a data-src="./Images/Portfolio-Images/Login.png">
                                     <img loading="lazy" src="./Images/Portfolio-Images/Login.png" alt="" class="h-full">
                                 </a>
                             </div>
@@ -587,6 +596,7 @@
                 </div>
             </section>
             <!--Experience Section-->
+            <div id="particles-js"></div>
             <section id="experience-section" class="max-w-7xl mx-auto text-white relative sm:p-6 lg:p-24">
                 <div class="flex justify-center mb-7 mt-7">
                     <h2 class="text-3xl text-green-500 sm:text-5xl font-bold">Experience <span class="text-white">
@@ -677,6 +687,7 @@
             </section>
 
             <!--Contact Section-->
+            <div id="particles-js"></div>
             <section class="max-w-7xl mx-auto text-white relative sm:p-6 lg:p-24">
                 <div class="flex justify-center mb-7 mt-7">
                     <h2 class="text-3xl text-green-500 sm:text-5xl font-bold">Let's <span class="text-white">
@@ -686,7 +697,8 @@
                 <div class="flex gap-4 flex-wrap text-white justify-center">
                     <div>
                         <a href="mailto:shirausha@gmail.com?subject=shirausha@gmail.com">
-                            <img src="https://static.vecteezy.com/system/resources/previews/016/716/465/non_2x/gmail-icon-free-png.png"
+                            <img loading="lazy"
+                                src="https://static.vecteezy.com/system/resources/previews/016/716/465/non_2x/gmail-icon-free-png.png"
                                 class="h-24">
                         </a>
                     </div>
@@ -694,20 +706,22 @@
 
                     <div>
                         <a href="https://wa.me/9629600956" target="_blank">
-                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/WhatsApp_icon.png/640px-WhatsApp_icon.png"
+                            <img loading="lazy"
+                                src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/WhatsApp_icon.png/640px-WhatsApp_icon.png"
                                 class="h-24">
                         </a>
                     </div>
                     <div>
                         <a href="https://www.linkedin.com/in/shira-v-05b319270/" target="_blank">
-                            <img src="https://i0.wp.com/openvisualfx.com/wp-content/uploads/2019/10/linkedin-icon-logo-png-transparent.png?fit=2400%2C2400&ssl=1"
+                            <img loading="lazy"
+                                src="https://i0.wp.com/openvisualfx.com/wp-content/uploads/2019/10/linkedin-icon-logo-png-transparent.png?fit=2400%2C2400&ssl=1"
                                 class="h-24">
                         </a>
                     </div>
 
                     <div>
                         <a href="https://www.behance.net/shirasaini" target="_blank">
-                            <img src="https://cdn.worldvectorlogo.com/logos/behance-1.svg" class="h-24">
+                            <img loading="lazy" src="https://cdn.worldvectorlogo.com/logos/behance-1.svg" class="h-24">
                         </a>
                     </div>
                 </div>
@@ -717,9 +731,12 @@
         </div>
     </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.js"></script>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/lightgallery/lightgallery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/lightgallery/plugins/thumbnail/lg-thumbnail.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/lightgallery/plugins/zoom/lg-zoom.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/particles.js"></script>
-    <script src="https://unpkg.com/scrollreveal"></script>
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
     <script src="./JS/main.js"></script>

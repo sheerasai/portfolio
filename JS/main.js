@@ -1,15 +1,15 @@
-window.addEventListener("load", function () {
-  //Preloader
-  setTimeout(function () {
-    const preLoader = document.getElementById("preloader");
-    const MainContent = document.getElementById("main-content");
-    preLoader.classList.add("fade-out");
-    setTimeout(() => {
-      preLoader.style.display = "none";
-      MainContent.classList.remove("opacity-0");
-      MainContent.classList.add("fade-in");
-    }, 1000);
-  }, 1000);
+ window.addEventListener("load", function () {
+
+//   setTimeout(function () {
+//     const preLoader = document.getElementById("preloader");
+//     const MainContent = document.getElementById("main-content");
+//     preLoader.classList.add("fade-out");
+//     setTimeout(() => {
+//       preLoader.style.display = "none";
+//       MainContent.classList.remove("opacity-0");
+//       MainContent.classList.add("fade-in");
+//     }, 1000);
+//   }, 1000);
 
 
 //typed.js
@@ -21,7 +21,7 @@ var typed = new Typed("#type", {
 });
 
 //custom cursor
-const Body = document.querySelector("#body");
+ const Body = document.querySelector("#body");
 const Cursor = document.querySelector("#cursor");
 Body.addEventListener("mousemove", function (dets) {
   gsap.to(Cursor, {
@@ -31,15 +31,7 @@ Body.addEventListener("mousemove", function (dets) {
   });
 });
 
- ScrollReveal().reveal('section', {
-      duration: 2000,
-      origin: 'bottom',
-      distance: '150px',
-      easing: 'ease-in-out',
-      delay: 200,
-      reset: false 
-    });
-
+ 
 
   particlesJS("particles-js", {
     particles: {
@@ -116,5 +108,15 @@ tabButtons.forEach(button => {
   });
 });
 
+  
+  
+   lightGallery(document.getElementById('lightgallery'), {
+     plugins: [lgZoom, lgThumbnail],
+     selector:'a',
+    speed: 400,   // animation speed
+    download: false // hide download button if you don’t want it
+  });
+  
+  
 });
 
