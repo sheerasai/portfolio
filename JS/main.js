@@ -110,13 +110,7 @@ tabButtons.forEach(button => {
 
   
   
-   lightGallery(document.getElementById('lightgallery'), {
-     plugins: [lgZoom, lgThumbnail],
-     selector:'a',
-    speed: 400,   // animation speed
-    download: false // hide download button if you don’t want it
-  });
-  
+ 
   
 });
 
