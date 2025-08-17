@@ -1,5 +1,4 @@
  window.addEventListener("load", function () {
-
 //typed.js
 var typed = new Typed("#type", {
   strings: ["UI/UX Developer", "UI/UX Designer"],
