@@ -1,17 +1,5 @@
  window.addEventListener("load", function () {
 
-//   setTimeout(function () {
-//     const preLoader = document.getElementById("preloader");
-//     const MainContent = document.getElementById("main-content");
-//     preLoader.classList.add("fade-out");
-//     setTimeout(() => {
-//       preLoader.style.display = "none";
-//       MainContent.classList.remove("opacity-0");
-//       MainContent.classList.add("fade-in");
-//     }, 1000);
-//   }, 1000);
-
-
 //typed.js
 var typed = new Typed("#type", {
   strings: ["UI/UX Developer", "UI/UX Designer"],
@@ -109,7 +97,7 @@ tabButtons.forEach(button => {
 });
 
   
-  
+    new WOW().init();
  
   
 });

@@ -7,6 +7,7 @@
     <title>Shira V</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="./CSS/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
 
 
@@ -14,17 +15,14 @@
 
 <body id="body">
     <div id="cursor"></div>
-    <!--Preloader-->
-    <!-- <div id="preloader" class="text-white animate-pulse fixed inset-0 flex justify-center items-center">
-        <h3 class="text-3xl sm:text-5xl text-center">Entering Portfolio... </h3>
-    </div> -->
+    <div id="particles-js"></div>
+
 
     <div class="main-content" id="main-content">
         <!--Hero Section-->
         <section class="hero-section min-h-screen flex items-center justify-center text-center p-4 relative">
-            <video autoplay muted loop playsinline src="./Images/9665235-hd_1920_1080_25fps.mp4"
-                class="bg-video"></video>
-            <div class="max-w-7xl mx-auto hero-content">
+
+            <div class="max-w-7xl mx-auto hero-content wow bounceInUp">
                 <h3 class="text-3xl md:text-7xl text-white font-bold mb-5">
                     V Shira <span id="type" class="text-green-500"></span>
                 </h3>
@@ -61,7 +59,8 @@
 
         <!--Skills Section-->
         <div class="body-content">
-            <section id="skills" class="min-h-screen flex text-center lg:p-24 flex-col ">
+
+            <section id="skills" class="min-h-screen flex text-center lg:p-24 flex-col mb-6">
                 <div class="flex justify-center mb-8">
                     <h2 class="text-3xl text-white sm:text-5xl font-bold">My Skill <span class="text-white">Box</span>
                     </h2>
@@ -236,7 +235,7 @@
             </section>
 
             <!--Portfolio Section Image Gallery-->
-            <section id="portfolio"
+            <section id="portfolio mb-6"
                 class="max-w-7xl mx-auto text-white relative portfolio-Image-section sm:p-6 lg:p-24">
                 <h2 class="text-3xl text-green-500 sm:text-5xl font-bold mb-4">Portfolio <span class="text-white">
                         Section</span> </h2>
@@ -248,58 +247,53 @@
                     </div>
 
                     <div class="tab-content mb-8" id="webApp">
-                        <div id="lightgallery" class="sm:columns-3">
+                        <div class="sm:columns-3">
                             <div class="mb-3">
-                                <a href="./Images/Portfolio-Images/RecruitmentDashaboardTechversant.png">
-                                    <img loading="lazy"
-                                        src="./Images/Portfolio-Images/RecruitmentDashaboardTechversant.png" alt=""
-                                        class="h-full aspect-square mb-3">
+                                <a href="./Images/Portfolio-Images/Cable-operators-Dashboard-min.webp">
+                                    <img src="./Images/Portfolio-Images/Cable-operators-Dashboard-min.webp" alt=""
+                                        class="h-full mb-3">
                                 </a>
 
 
 
-                                <a href="./Images/Portfolio-Images/Cable-operators-Dashboard.png">
-                                    <img loading="lazy" src="./Images/Portfolio-Images/Cable-operators-Dashboard.png"
-                                        class="h-full mb-3" />
+                                <a href="./Images/Portfolio-Images/RecruitmentDashaboardTechversant-min.webp">
+                                    <img src="./Images/Portfolio-Images/RecruitmentDashaboardTechversant-min.webp"
+                                        class="h-full mb-3 " />
                                 </a>
                             </div>
 
                             <div class="mb-3">
-                                <a href="./Images/Portfolio-Images/PurpleMoon.png">
-                                    <img src="./Images/Portfolio-Images/PurpleMoon.png" alt="" class="h-full mb-3">
+                                <a href="./Images/Portfolio-Images/PurpleMoon-min.webp">
+                                    <img src="./Images/Portfolio-Images/PurpleMoon-min.webp" alt="" class="h-full mb-3">
                                 </a>
 
                             </div>
 
                             <div class="mb-3">
-                                <a href="./Images/Portfolio-Images/PayrollLogin (2).png">
-                                    <img loading="lazy" src="./Images/Portfolio-Images/PayrollLogin (2).png" alt=""
+                                <a href="./Images/Portfolio-Images/PayrollLogin (2)-min.webp">
+                                    <img src="./Images/Portfolio-Images/PayrollLogin (2)-min.webp" alt=""
                                         class="h-full mb-3">
                                 </a>
 
                             </div>
 
                             <div class="mb-3">
-                                <a href="./Images/Portfolio-Images/TiicToe (1).png">
-                                    <img loading="lazy" src="./Images/Portfolio-Images/TiicToe (1).png" alt=""
-                                        class="h-full mb-3">
+                                <a href="./Images/Portfolio-Images/TiicToe-min.webp">
+                                    <img src="./Images/Portfolio-Images/TiicToe-min.webp" alt="" class="h-full mb-3">
                                 </a>
 
-                                <a data-src="./Images/Portfolio-Images/PayrollLogin (3).png">
-                                    <img src="lazy" src="./Images/Portfolio-Images/PayrollLogin (3).png" alt=""
-                                        class="h-full mb-3">
+                                <a href="./Images/Portfolio-Images/Tic-toe-1.webp">
+                                    <img src="./Images/Portfolio-Images/Tic-toe-1.webp" alt="" class="h-full mb-3">
                                 </a>
+                                <a href="./Images/Portfolio-Images/Landingpage-min.jpg">
+                                    <img src="./Images/Portfolio-Images/Landingpage-min.jpg" alt="" class="h-full">
+                                </a>
+
 
 
                             </div>
 
-                            <div class="mb-3">
-                                <a href="./Images/Portfolio-Images/Landingpage (4).png">
-                                    <img src="lazy" src="./Images/Portfolio-Images/Landingpage (4).png" alt=""
-                                        class="h-full">
-                                </a>
 
-                            </div>
 
 
                         </div>
@@ -308,60 +302,46 @@
                     <div class="tab-content  mb-8" id="mobApp">
                         <div class="sm:columns-3">
                             <div class="mb-3">
-                                <a href="./Images/Portfolio-Images/FirstScreen.png">
-                                    <img loading="lazy" src="./Images/Portfolio-Images/FirstScreen.png" alt=""
+                                <a href="./Images/Portfolio-Images/FirstScreen-min.webp">
+                                    <img src="./Images/Portfolio-Images/FirstScreen-min.webp" alt=""
                                         class="h-full mb-3">
                                 </a>
-                                <a href="./Images/Portfolio-Images/Car-Page.png">
-                                    <img loading="lazy" src="./Images/Portfolio-Images/Car-Page.png" alt=""
-                                        class="h-full mb-3">
+                                <a href="./Images/Portfolio-Images/Car-Page.webp">
+                                    <img src="./Images/Portfolio-Images/Car-Page.webp" alt="" class="h-full mb-3">
                                 </a>
-                                <a" href="./Images/Portfolio-Images/Group 31 (1).png">
-                                    <img loading="lazy" src="./Images/Portfolio-Images/Group 31 (1).png" alt=""
-                                        class="h-full">
+                                <a" href="./Images/Portfolio-Images/Group 31 (1)-min.webp">
+                                    <img src="./Images/Portfolio-Images/Group 31 (1)-min.webp" alt="" class="h-full">
                                     </a>
                             </div>
 
                             <div class="mb-3">
-                                <a href="./Images/Portfolio-Images/Compudatas.png">
-                                    <img loading="lazy" src="./Images/Portfolio-Images/Compudatas.png" alt=""
-                                        class="h-full mb-3">
+                                <a href="./Images/Portfolio-Images/Compudatas-min.webp">
+                                    <img src="./Images/Portfolio-Images/Compudatas-min.webp" alt="" class="h-full mb-3">
                                 </a>
-                                <a href="./Images/Portfolio-Images/createProductList.png">
-                                    <img loading="lazy" src="./Images/Portfolio-Images/createProductList.png" alt=""
+                                <a href="./Images/Portfolio-Images/createProductList-min.webp">
+                                    <img src="./Images/Portfolio-Images/createProductList-min.webp" alt=""
                                         class="h-full">
                                 </a>
                             </div>
 
                             <div class="mb-3">
                                 <a href="./Images/Portfolio-Images/CreateTickerList.png">
-                                    <img loading="lazy" src="./Images/Portfolio-Images/CreateTickerList.png" alt=""
+                                    <img src="./Images/Portfolio-Images/CreateTickerList.png" alt=""
                                         class="h-full mb-3">
                                 </a>
-                                <a href="./Images/Portfolio-Images/ESGOrders.png">
-                                    <img loading="lazy" src="./Images/Portfolio-Images/ESGOrders.png" alt=""
-                                        class="h-full">
+                                <a href="./Images/Portfolio-Images/ESGOrders-min.webp">
+                                    <img src="./Images/Portfolio-Images/ESGOrders-min.webp" alt="" class="h-full">
                                 </a>
                             </div>
 
-                            <div class="mb-3">
-                                <a href="./Images/Portfolio-Images/CreateTickerList.png">
-                                    <img loading="lazy" src="./Images/Portfolio-Images/CreateTickerList.png" alt=""
-                                        class="h-full mb-3">
-                                </a>
-                                <a href="./Images/Portfolio-Images/ESGOrders.png">
-                                    <img loading="lazy" src="./Images/Portfolio-Images/ESGOrders.png" alt=""
-                                        class="h-full">
-                                </a>
-                            </div>
+
 
                             <div class="mb-3">
-                                <a href="./Images/Portfolio-Images/Register.png">
-                                    <img loading="lazy" src="./Images/Portfolio-Images/Register.png" alt=""
-                                        class="h-full mb-3">
+                                <a href="./Images/Portfolio-Images/Register-min.webp">
+                                    <img src="./Images/Portfolio-Images/Register-min.webp" alt="" class="h-full mb-3">
                                 </a>
-                                <a href="./Images/Portfolio-Images/Login.png">
-                                    <img loading="lazy" src="./Images/Portfolio-Images/Login.png" alt="" class="h-full">
+                                <a href="./Images/Portfolio-Images/Login-min.webp">
+                                    <img src="./Images/Portfolio-Images/Login-min.webp" alt="" class="h-full">
                                 </a>
                             </div>
                         </div>
@@ -370,13 +350,13 @@
             </section>
 
             <!--Project  Section-->
-            <div id="particles-js"></div>
+
             <section id="project-section" class="max-w-7xl mx-auto text-white relative sm:p-6 lg:p-24">
                 <div class="flex justify-center mb-7 mt-7">
                     <h2 class="text-3xl text-green-500 sm:text-5xl font-bold">Project <span class="text-white">
                             Section</span> </h2>
                 </div>
-                <div class="project-section  p-5" id="projects">
+                <div class="project-section p-5" id="projects">
                     <div class="grid grid-cols-1 gap-4  xl:grid-cols-2">
                         <!--Project one-->
                         <div class="project-box p-4 text-left rounded-sm shadow-md mb-4">
@@ -596,98 +576,113 @@
                 </div>
             </section>
             <!--Experience Section-->
-            <div id="particles-js"></div>
+
             <section id="experience-section" class="max-w-7xl mx-auto text-white relative sm:p-6 lg:p-24">
                 <div class="flex justify-center mb-7 mt-7">
-                    <h2 class="text-3xl text-green-500 sm:text-5xl font-bold">Experience <span class="text-white">
-                            Section</span> </h2>
+                    <h2 class="text-3xl text-green-500 sm:text-5xl font-bold">
+                        Experience <span class="text-white">Section</span>
+                    </h2>
                 </div>
 
-
-                <div class="grid grid-cols-9">
-                    <!--Exp 1 Stack 1-->
-                    <div class="col-span-4 w-full h-full">
-                        <div class="w-full h-full bg-gray-800 rounded-md p-4 md:pl-4 text-left">
-                            <h2 class="text-white text-xl "> Senior UI/UX Designer</h2>
-                            <h5 class="text-sm text-gray-300 mb-4">Techversant Infotech Pvt. Ltd. <span
-                                    class="text-green-500 text-sm">(Present)</span></h5>
-                            <ul class="points text-sm">
-                                <li class="text-sm mb-4"><i class="fa-solid fa-diamond text-green-500"></i> Designing
-                                    and delivering intuitive web and application interfaces.</li>
-                                <li class="text-sm mb-4"><i class="fa-solid fa-diamond text-green-500"></i> Creating
-                                    responsive layouts using Figma, Tailwind, and Bootstrap.</li>
-                                <li class="text-sm mb-4"><i class="fa-solid fa-diamond text-green-500"></i>
-                                    Collaborating closely with developers for seamless design.</li>
+                <div class="grid grid-cols-1 md:grid-cols-9 gap-y-8">
+                    <!-- Exp 1 -->
+                    <div class="md:col-span-4">
+                        <div class="bg-gray-800 rounded-md p-4 text-left">
+                            <h2 class="text-xl">Senior UI/UX Designer</h2>
+                            <h5 class="text-sm text-gray-300 mb-4">
+                                Techversant Infotech Pvt. Ltd.
+                                <span class="text-green-500">(Present)</span>
+                            </h5>
+                            <ul class="text-sm space-y-3">
+                                <li><i class="fa-solid fa-diamond text-green-500"></i> Designing and delivering
+                                    intuitive web and
+                                    application interfaces.</li>
+                                <li><i class="fa-solid fa-diamond text-green-500"></i> Creating responsive layouts using
+                                    Figma,
+                                    Tailwind, and Bootstrap.</li>
+                                <li><i class="fa-solid fa-diamond text-green-500"></i> Collaborating closely with
+                                    developers for
+                                    seamless design.</li>
                             </ul>
                         </div>
-
                     </div>
 
-                    <div class="col-span-1 w-full h-full flex justify-center items-center relative">
+                    <div class="hidden md:flex md:col-span-1 justify-center relative">
                         <div class="h-full w-1 bg-green-600"></div>
-                        <div class="absolute w-5 h-5 bg-green-600 z-10 rounded-full text-white">1</div>
+                        <div
+                            class="absolute w-5 h-5 bg-green-600 rounded-full text-white flex items-center justify-center">
+                            1</div>
                     </div>
-                    <div class="col-span-4 w-full h-full"></div>
 
-                    <!--Exp 2 Stack 2-->
-                    <div class="col-span-4 w-full h-full"></div>
-                    <div class="col-span-1 w-full h-full flex justify-center items-center relative">
+                    <div class="hidden md:block md:col-span-4"></div>
+
+                    <!-- Exp 2 -->
+                    <div class="hidden md:block md:col-span-4"></div>
+
+                    <div class="hidden md:flex md:col-span-1 justify-center relative">
                         <div class="h-full w-1 bg-green-600"></div>
-                        <div class="absolute w-5 h-5 bg-green-600 z-10 rounded-full text-white">2</div>
+                        <div
+                            class="absolute w-5 h-5 bg-green-600 rounded-full text-white flex items-center justify-center">
+                            2</div>
                     </div>
 
-                    <div class="col-span-4 w-full h-full ">
-                        <div class="w-full h-full bg-gray-800 rounded-md p-4 md:pl-4 text-left">
-                            <h2 class="text-white text-xl ">UI Developer</h2>
-                            <h5 class="text-sm text-gray-300 mb-4">TCP International Inc. <span
-                                    class="text-green-gray-300 text-sm">(2.6 months)</span></h5>
-                            <ul class="points text-sm">
-                                <li class="text-sm mb-4"><i class="fa-solid fa-diamond text-green-500"></i> Customized
-                                    and maintained WordPress websites for US Clients worked on both design and
-                                    development</li>
-                                <li class="text-sm mb-4"><i class="fa-solid fa-diamond text-green-500"></i> Worked on
-                                    Creating responsive layouts using Figma,Adobe XD,Photoshop and Bootstrap in the
-                                    eccomerce Projects.</li>
-                                <li class="text-sm mb-4"><i class="fa-solid fa-diamond text-green-500"></i> Designed
-                                    banners and handled video editing for web content.</li>
-
+                    <div class="md:col-span-4">
+                        <div class="bg-gray-800 rounded-md p-4 text-left">
+                            <h2 class="text-xl">UI Developer</h2>
+                            <h5 class="text-sm text-gray-300 mb-4">
+                                TCP International Inc.
+                                <span class="text-green-500">(2.6 months)</span>
+                            </h5>
+                            <ul class="text-sm space-y-3">
+                                <li><i class="fa-solid fa-diamond text-green-500"></i> Customized and maintained
+                                    WordPress websites
+                                    for US clients.</li>
+                                <li><i class="fa-solid fa-diamond text-green-500"></i> Created responsive layouts using
+                                    Figma, Adobe
+                                    XD, Photoshop, and Bootstrap.</li>
+                                <li><i class="fa-solid fa-diamond text-green-500"></i> Designed banners and handled
+                                    video editing
+                                    for web content.</li>
                             </ul>
                         </div>
-
                     </div>
 
-
-                    <!--Exp 3 Stack 3-->
-                    <div class="col-span-4 w-full h-full ">
-                        <div class="w-full h-full bg-gray-800 rounded-md p-4 md:pl-4 text-left">
-                            <h2 class="text-white text-xl ">Web Designer</h2>
-                            <h5 class="text-sm text-gray-300 mb-4">Aftis Global Pvt.Ltd<span
-                                    class="text-green-gray-300 text-sm"> (2018 – 2019, 1 year)</span></h5>
-                            <ul class="points text-sm">
-                                <li class="text-sm mb-4"><i class="fa-solid fa-diamond text-green-500"></i> Designing
-                                    and delivering intuitive web and application interfaces.</li>
-                                <li class="text-sm mb-4"><i class="fa-solid fa-diamond text-green-500"></i> Creating
-                                    responsive layouts using Figma, Tailwind, and Bootstrap.</li>
-                                <li class="text-sm mb-4"><i class="fa-solid fa-diamond text-green-500"></i>
-                                    Collaborating closely with developers for seamless design.</li>
+                    <!-- Exp 3 -->
+                    <div class="md:col-span-4">
+                        <div class="bg-gray-800 rounded-md p-4 text-left">
+                            <h2 class="text-xl">Web Designer</h2>
+                            <h5 class="text-sm text-gray-300 mb-4">
+                                Aftis Global Pvt. Ltd.
+                                <span class="text-green-500">(2018 – 2019, 1 year)</span>
+                            </h5>
+                            <ul class="text-sm space-y-3">
+                                <li><i class="fa-solid fa-diamond text-green-500"></i> Designing and delivering
+                                    intuitive web and
+                                    application interfaces.</li>
+                                <li><i class="fa-solid fa-diamond text-green-500"></i> Creating responsive layouts using
+                                    Figma,
+                                    Tailwind, and Bootstrap.</li>
+                                <li><i class="fa-solid fa-diamond text-green-500"></i> Collaborating closely with
+                                    developers for
+                                    seamless design.</li>
                             </ul>
                         </div>
-
                     </div>
 
-                    <div class="col-span-1 w-full h-full flex justify-center items-center relative">
+                    <div class="hidden md:flex md:col-span-1 justify-center relative">
                         <div class="h-full w-1 bg-green-600"></div>
-                        <div class="absolute w-5 h-5 bg-green-600 z-10 rounded-full text-white">3</div>
+                        <div
+                            class="absolute w-5 h-5 bg-green-600 rounded-full text-white flex items-center justify-center">
+                            3</div>
                     </div>
-                    <div class="col-span-4 w-full h-full"></div>
 
-
+                    <div class="hidden md:block md:col-span-4"></div>
                 </div>
-
             </section>
 
+
             <!--Contact Section-->
-            <div id="particles-js"></div>
+
             <section class="max-w-7xl mx-auto text-white relative sm:p-6 lg:p-24">
                 <div class="flex justify-center mb-7 mt-7">
                     <h2 class="text-3xl text-green-500 sm:text-5xl font-bold">Let's <span class="text-white">
@@ -734,7 +729,7 @@
 
 
 
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/particles.js"></script>
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
